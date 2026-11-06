@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+main {
+  max-width: 900px;
+  margin: 45px auto;
+  padding: 0 24px 30px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #b58a2a;
+  text-align: center;
+  font-size: 30px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.order-form {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 20px 30px;
+}
+
+.quantity-currency {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid #a34f3f;
+  outline-offset: 1px;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 3px;
+  background: #ad5040;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #8f4032;
+}
+
+.form-actions {
+  grid-column: 1 / -1;
+  text-align: right;
+}
+
+section {
+  margin-top: 35px;
+}
+
+.list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.list-heading span {
+  color: #666;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.search-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-controls input {
+  max-width: 320px;
+}
+
+a {
+  color: #944331;
+  white-space: nowrap;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #ad5040;
+  color: white;
+  text-align: left;
+  font-weight: normal;
+}
+
+th, td {
+  padding: 14px 12px;
+}
+
+td {
+  border-bottom: 1px solid #e6e6e6;
+  overflow-wrap: anywhere;
+}
+
+tbody tr:nth-child(even) {
+  background: #faf7f5;
+}
+
+.number {
+  text-align: right;
+}
+
+.empty {
+  padding: 30px;
+  color: #666;
+  text-align: center;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 3px;
+}
+
+.success {
+  background: #edf7ed;
+  color: #276035;
+}
+
+.error {
+  background: #fff0ed;
+  color: #923725;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 24px auto;
+    padding: 0 16px 24px;
+  }
+
+  .order-form {
+    grid-template-columns: 1fr;
+  }
+
+  .search-controls {
+    flex-wrap: wrap;
+  }
+
+  .search-controls input {
+    max-width: none;
+    flex-basis: 100%;
+  }
+
+  table {
+    min-width: 570px;
+  }
+}

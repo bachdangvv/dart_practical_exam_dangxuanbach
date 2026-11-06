@@ -1,1 +1,2 @@
-# dart_practical_exam_dangxuanbach
+cd C:\Aptech\dart-exam
+dart run main.dart
